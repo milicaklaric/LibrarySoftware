@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09557272-7993-4194-AE06-46B07B133F38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Forme</RootNamespace>
+    <AssemblyName>Forme</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>book icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmGlavna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGlavna.Designer.cs">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessage.Designer.cs">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmObnavljanjeClanarine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmObnavljanjeClanarine.Designer.cs">
+      <DependentUpon>FrmObnavljanjeClanarine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Komunikacija.cs" />
+    <Compile Include="KontrolerKI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sesija.cs" />
+    <Compile Include="UCBrisanjeKnjige.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBrisanjeKnjige.Designer.cs">
+      <DependentUpon>UCBrisanjeKnjige.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCObnavljanjeClanarine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCObnavljanjeClanarine.Designer.cs">
+      <DependentUpon>UCObnavljanjeClanarine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCObrisiClana.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCObrisiClana.Designer.cs">
+      <DependentUpon>UCObrisiClana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPozajmljivanjeKnjige.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPozajmljivanjeKnjige.Designer.cs">
+      <DependentUpon>UCPozajmljivanjeKnjige.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUnosClana.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUnosClana.Designer.cs">
+      <DependentUpon>UCUnosClana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUnosKnjige.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUnosKnjige.Designer.cs">
+      <DependentUpon>UCUnosKnjige.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCVracanjeKnjige.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCVracanjeKnjige.Designer.cs">
+      <DependentUpon>UCVracanjeKnjige.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmGlavna.resx">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessage.resx">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmObnavljanjeClanarine.resx">
+      <DependentUpon>FrmObnavljanjeClanarine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCBrisanjeKnjige.resx">
+      <DependentUpon>UCBrisanjeKnjige.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCObnavljanjeClanarine.resx">
+      <DependentUpon>UCObnavljanjeClanarine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCObrisiClana.resx">
+      <DependentUpon>UCObrisiClana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPozajmljivanjeKnjige.resx">
+      <DependentUpon>UCPozajmljivanjeKnjige.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUnosClana.resx">
+      <DependentUpon>UCUnosClana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUnosKnjige.resx">
+      <DependentUpon>UCUnosKnjige.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCVracanjeKnjige.resx">
+      <DependentUpon>UCVracanjeKnjige.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domen\Domen.csproj">
+      <Project>{7468f3f6-89c6-49c8-8cbd-c83702f03bd8}</Project>
+      <Name>Domen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kontroler\Kontroler.csproj">
+      <Project>{ce75a5e0-305b-4c0b-9cf2-f3d9b3b27310}</Project>
+      <Name>Kontroler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\err.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="book icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
